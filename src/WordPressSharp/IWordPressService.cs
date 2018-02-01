@@ -72,6 +72,9 @@ namespace WordPressSharp
         [XmlRpcMethod("wp.newTerm")]
         string NewTerm(int blog_id, string username, string password, Term term);
 
+        [XmlRpcMethod("wp.editTerm")]
+        bool EditTerm(int blog_id, string username, string password, int term_id, Term term);
+
         [XmlRpcMethod("wp.setOptions")]
         XmlRpcStruct SetOptios(int blog_id, string username, string password, XmlRpcStruct options);
 

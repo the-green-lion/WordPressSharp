@@ -3,8 +3,11 @@
 namespace WordPressSharp.Models
 {
     [XmlRpcMissingMapping(MappingAction.Ignore)]
-    public class MediaFilter : FilterBase
+    public class MediaFilter
     {
+        [XmlRpcMember("number")]
+        public int Number { get; set; }
+
         [XmlRpcMember("offset")]
         public string Offset { get; set; }
 

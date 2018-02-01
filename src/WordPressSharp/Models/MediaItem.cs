@@ -10,7 +10,7 @@ namespace WordPressSharp.Models
         public string Id { get; set; }
 
         [XmlRpcMember("date_created_gmt")]
-        public DateTime DateCreated { get; set; }
+        public object DateCreated { get; set; }
 
         [XmlRpcMember("parent")]
         public int Parent { get; set; }

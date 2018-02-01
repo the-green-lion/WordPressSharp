@@ -247,6 +247,12 @@ namespace WordPressSharp
                 WordPressSiteConfig.Password, term);
         }
 
+        public bool EditTerm(Term term)
+        {
+            return WordPressService.EditTerm(WordPressSiteConfig.BlogId, WordPressSiteConfig.Username,
+                WordPressSiteConfig.Password, int.Parse(term.Id), term);
+        }
+
         public bool DeleteTerm(int termId, string taxonomy)
         {
             return WordPressService.DeleteTerm(WordPressSiteConfig.BlogId, WordPressSiteConfig.Username,
