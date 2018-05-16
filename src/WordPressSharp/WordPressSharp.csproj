@@ -6,4 +6,7 @@
   <ItemGroup>
     <PackageReference Include="xmlrpcnet" Version="3.0.0.266" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
 </Project>
